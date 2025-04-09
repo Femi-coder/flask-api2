@@ -9,7 +9,7 @@ MONGO_URI = "mongodb+srv://Femi:password_123@ecowheelsdublin.zpsyu.mongodb.net"
 DB_NAME = "carrental"
 
 #  Initialize MongoDB Connection
-client = MongoClient(MONGO_URI)
+client = pymongo.MongoClient(MONGO_URI)
 db = client[DB_NAME]
 reviews_collection = db["reviews"]
 
